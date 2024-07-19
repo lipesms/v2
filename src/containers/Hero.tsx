@@ -1,0 +1,44 @@
+import HeroSocialLinks from '../components/HeroSocialLinks'
+
+import welcomeCodeImage from '../assets/images/welcomeCode.png'
+import gradientCircle from '../assets/images/gradientCircle.png'
+
+const Hero = () => {
+  return (
+    <div className="relative bg-main-color pb-16 xl:h-screen xl:w-screen lg:bg-transparent lg:bg-hero-pattern bg-no-repeat bg-cover">
+      <span className="-z-10 h-full w-full absolute top-0 left-0 bg-hero-image block"></span>
+      <div className="container mx-auto px-10 xl:px-16 flex flex-col gap-8 pt-32 justify-between w-full h-full xl:flex-row">
+        <HeroSocialLinks />
+        <div className="flex flex-col items-center xl:items-start grow justify-center gap-6 text-white font-bold ">
+          <h1 className="text-2xl text-center xl:text-5xl xl:text-start ">
+            Olá! Me chamo Felipe Martins, prazer em te conhecer!
+          </h1>
+          <p className="text-xl text-center xl:w-4/5 xl:text-start">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+            placerat varius imperdiet. In at congue lorem. Curabitur porttitor
+            sem ac massa ultricies, lacinia feugiat eros molestie. Donec egestas
+            est mattis, cursus libero nec, bibendum tortor. Phasellus at nunc at
+            est suscipit interdum.
+          </p>
+          <button className="px-4 py-4 text-xl bg-buttonLinear rounded-full cursor-pointer max-w-52">
+            Entre em contato
+          </button>
+        </div>
+        <div className="relative flex flex-col items-center justify-center">
+          <img
+            src={welcomeCodeImage}
+            alt=""
+            className="z-10 relative rounded-xl max-w-87 lg:max-w-xl"
+          />
+          {/* <img
+            src={gradientCircle}
+            alt=""
+            className="xl:-z-10 absolute -top-14 -left-9 xl:top-4 lg:-left-24 max-w-100 lg:max-w-3xl"
+          /> */}
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default Hero
