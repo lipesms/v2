@@ -14,7 +14,8 @@ export default {
         'radial-blue': '1F41BB'
       },
       backgroundImage: {
-        'hero-image': 'url("./src/assets/images/background.png")',
+        'hero-image':
+          'url("https://lipesms.github.io/v2//src/assets/images/background.png")',
         'hero-pattern':
           'linear-gradient(to top, #101728, transparent, transparent, transparent, transparent);',
         buttonLinear: 'linear-gradient(to right, #FF79B5, #5C80FF);'
