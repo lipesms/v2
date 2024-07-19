@@ -1,7 +1,6 @@
 import HeroSocialLinks from '../components/HeroSocialLinks'
 
 import welcomeCodeImage from '../assets/images/welcomeCode.png'
-import gradientCircle from '../assets/images/gradientCircle.png'
 
 const Hero = () => {
   return (
@@ -30,11 +29,6 @@ const Hero = () => {
             alt=""
             className="z-10 relative rounded-xl max-w-87 lg:max-w-xl"
           />
-          {/* <img
-            src={gradientCircle}
-            alt=""
-            className="xl:-z-10 absolute -top-14 -left-9 xl:top-4 lg:-left-24 max-w-100 lg:max-w-3xl"
-          /> */}
         </div>
       </div>
     </div>
