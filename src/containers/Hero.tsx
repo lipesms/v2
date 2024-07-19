@@ -27,7 +27,7 @@ const Hero = () => {
           <img
             src={welcomeCodeImage}
             alt=""
-            className="z-10 relative rounded-xl max-w-87 lg:max-w-xl"
+            className="z-10 relative rounded-xl max-w-full lg:max-w-xl"
           />
         </div>
       </div>
