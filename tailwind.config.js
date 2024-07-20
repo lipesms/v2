@@ -10,8 +10,9 @@ export default {
         'main-color': '#101728',
         background: '#101728',
         navBar: '#030508',
-        sectionActive: '#FF79B5',
-        'radial-blue': '1F41BB'
+        'section-active': '#FF79B5',
+        'radial-blue': '#1F41BB',
+        'gray-20%': 'rgba(184,184,184,0.2)'
       },
       backgroundImage: {
         'hero-image':
@@ -21,7 +22,8 @@ export default {
         buttonLinear: 'linear-gradient(to right, #FF79B5, #5C80FF);'
       },
       gridTemplateColumns: {
-        31: '1fr 1fr 1fr'
+        31: '1fr 1fr 1fr',
+        '2/5': '1.5fr 2fr'
       },
       maxWidth: {
         '35%': '35%',
