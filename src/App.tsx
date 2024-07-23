@@ -3,6 +3,7 @@ import Hero from './containers/Hero'
 import AboutMe from './containers/AboutMe'
 import Skills from './containers/Skills'
 import Experiences from './containers/Experiences'
+import Projects from './containers/Projects'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <AboutMe />
       <Skills />
       <Experiences />
+      <Projects />
     </>
   )
 }
