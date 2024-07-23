@@ -4,6 +4,8 @@ import AboutMe from './containers/AboutMe'
 import Skills from './containers/Skills'
 import Experiences from './containers/Experiences'
 import Projects from './containers/Projects'
+import Contact from './containers/Contact'
+import Footer from './containers/Footer'
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
       <Skills />
       <Experiences />
       <Projects />
+      <Contact />
+      <Footer />
     </>
   )
 }

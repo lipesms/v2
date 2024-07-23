@@ -31,7 +31,7 @@ const experiences = [
 const Experiences = () => {
   return (
     <div className="bg-main-color ">
-      <div className="container mx-auto px-10 lg:px-16 h-full">
+      <div className="container mx-auto px-10 pt-20 lg:px-16 h-full">
         <h2 className="text-white font-bold text-3xl">Experiências</h2>
         <div className="[&_button]:text-2xl [&_button]:xl:text-3xl [&_button]:font-bold [&_button]:me-4 py-8 xl:py-20">
           <div className="w-fit m-auto">

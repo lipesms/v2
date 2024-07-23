@@ -27,7 +27,7 @@ const Hero = () => {
           <img
             src={welcomeCodeImage}
             alt=""
-            className="relative rounded-xl max-w-full lg:max-w-xl"
+            className="relative rounded-xl max-w-full lg:max-w-xl shadow-[18px_20px_7px_0px_#FF79B4]"
           />
         </div>
       </div>

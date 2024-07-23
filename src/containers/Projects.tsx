@@ -43,7 +43,7 @@ const projets = [
 const Projects = () => {
   return (
     <div className="bg-main-color">
-      <div className="container mx-auto px-10 lg:px-16 h-full">
+      <div className="container mx-auto px-10 pt-20 lg:px-16 h-full">
         <h2 className="text-white font-bold text-3xl">Projetos</h2>
         <div className="flex flex-col gap-16 text-white font-bold py-8 md:flex-row md:flex-wrap xl:py-20">
           {projets.map((project, index) => {

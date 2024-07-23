@@ -74,7 +74,7 @@ const design = [
 const Skills = () => {
   return (
     <div className="bg-main-color">
-      <div className="container mx-auto px-10 lg:px-16 h-full">
+      <div className="container mx-auto px-10 pt-20 lg:px-16 h-full">
         <h2 className="text-white font-bold text-3xl">Habilidades</h2>
         <div className="flex flex-col gap-8 py-8  md:grid md:grid-cols-2 lg:grid-cols-3 xl:gap-16 xl:py-20">
           <SkillCard technology="Front-end" techsPercents={front} />
