@@ -23,12 +23,23 @@ export default {
       },
       gridTemplateColumns: {
         31: '1fr 1fr 1fr',
-        '2/5': '1.5fr 2fr'
+        '2/5': '1.5fr 2fr',
+        experiences: '1fr max-content 1fr'
+      },
+      gridTemplateRows: {
+        experiences: '1fr 32px 1fr'
       },
       maxWidth: {
         '35%': '35%',
         87: '22rem',
-        100: '26rem'
+        100: '26rem',
+        332: '332px'
+      },
+      width: {
+        332: '332px'
+      },
+      spacing: {
+        '37%': '37%'
       }
     }
   },
