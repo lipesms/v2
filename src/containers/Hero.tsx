@@ -19,7 +19,7 @@ const Hero = () => {
             est mattis, cursus libero nec, bibendum tortor. Phasellus at nunc at
             est suscipit interdum.
           </p>
-          <button className="px-4 py-4 text-xl bg-buttonLinear rounded-full cursor-pointer max-w-52">
+          <button className="px-4 py-4 text-xl bg-buttonLinear rounded-full cursor-pointer max-w-52 hover:shadow-[5px_5px_14px_0_#686868ad] hover:scale-110 transition-all duration-200">
             Entre em contato
           </button>
         </div>

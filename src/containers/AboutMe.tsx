@@ -1,5 +1,5 @@
 import profile from '../assets/images/profile.png'
-import setaParaBaixo from '../assets/icons/seta-para-baixo.png'
+import setaParaBaixo from '../assets/icons/seta-para-baixo.svg'
 
 const AboutMe = () => {
   return (
@@ -38,7 +38,7 @@ const AboutMe = () => {
               também sigo com programação, onde desenvolvo pequenos jogos em GML
               com minha irmã.
             </p>
-            <button className="flex self-center bg-section-active text-black py-4 px-4 rounded-full w-fit cursor-pointer">
+            <button className="flex self-center bg-section-active text-black py-4 px-4 rounded-full w-fit cursor-pointer hover:scale-110 transition-all duration-200">
               Baixar CV
               <img src={setaParaBaixo} className="max-h-6 ps-2" />
             </button>

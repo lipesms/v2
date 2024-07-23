@@ -1,7 +1,7 @@
 const NavBar = () => {
   return (
     <div className="fixed z-20 lg:bg-navBar w-screen bg-main-color ">
-      <ul className="container mx-auto px-10 lg:px-16 flex items-center gap-4 min-h-24 text-white font-bold">
+      <ul className="container mx-auto px-10 lg:px-16 flex items-center gap-4 min-h-24 text-white font-bold [&_li]:transition-all">
         <li className="text-section-active">
           <a href="">Inicio</a>
         </li>
