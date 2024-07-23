@@ -47,15 +47,17 @@ const Experiences = () => {
                     key={experience.nome}
                     className="grid grid-cols-experiences gap-8 font-bold text-start"
                   >
-                    <div className="w-40">
-                      <h4 className="text-xl text-white">{experience.nome}</h4>
-                      <p className="text-lg text-gray-500">
+                    <div className="w-32 md:w-40">
+                      <h4 className="text-lg xl:text-xl text-white">
+                        {experience.nome}
+                      </h4>
+                      <p className="text-md md:text-lg text-gray-500">
                         {experience.local}
                       </p>
-                      <p className="text-lg text-gray-500">
+                      <p className="text-md md:text-lg text-gray-500">
                         {experience.empresa}
                       </p>
-                      <p className="text-section-active">
+                      <p className="text-sm text-section-active">
                         {experience.datas.inicio} - {experience.datas.fim}
                       </p>
                     </div>
@@ -74,16 +76,18 @@ const Experiences = () => {
                     key={experience.nome}
                     className="grid grid-cols-experiences gap-8 font-bold text-start"
                   >
-                    <div className="w-40"></div>
-                    <div className="order-last w-40">
-                      <h4 className="text-xl text-white">{experience.nome}</h4>
-                      <p className="text-lg text-gray-500">
+                    <div className="w-32 md:w-40"></div>
+                    <div className="order-last w-32 md:w-40">
+                      <h4 className="text-lg md:text-xl text-white">
+                        {experience.nome}
+                      </h4>
+                      <p className="text-md text-gray-500">
                         {experience.local}
                       </p>
-                      <p className="text-lg text-gray-500">
+                      <p className="text-md text-gray-500">
                         {experience.empresa}
                       </p>
-                      <p className="text-section-active">
+                      <p className="text-sm text-section-active">
                         {experience.datas.inicio} - {experience.datas.fim}
                       </p>
                     </div>
