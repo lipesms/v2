@@ -9,7 +9,7 @@ const Hero = () => {
       <div className="container mx-auto px-10 xl:px-16 flex flex-col gap-8 pt-32 justify-between w-full h-full xl:flex-row">
         <HeroSocialLinks />
         <div className="flex flex-col items-center xl:items-start grow justify-center gap-6 text-white font-bold ">
-          <h1 className="text-2xl text-center xl:text-5xl xl:text-start ">
+          <h1 className="text-3xl text-center xl:text-5xl xl:text-start ">
             Olá! Me chamo Felipe Martins, prazer em te conhecer!
           </h1>
           <p className="text-xl text-center xl:w-4/5 xl:text-start">

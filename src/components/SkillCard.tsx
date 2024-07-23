@@ -25,13 +25,13 @@ const SkillCard = ({ technology, techsPercents }: CardProps) => {
                 : brackets
           }
           alt=""
-          className="w-12"
+          className="w-10 md:w-12"
         />
-        <h3 className="text-white text-3xl font-bold text-center">
+        <h3 className="text-white text-2xl md:text-3xl font-bold text-center">
           {technology}
         </h3>
       </div>
-      <ul className="text-white text-2xl font-bold [&_div]:flex [&_div]:justify-between [&_li]:pt-4">
+      <ul className="text-white text-xl md:text-2xl font-bold [&_div]:flex [&_div]:justify-between [&_li]:pt-4">
         {techsPercents.map((e) => (
           <li key={e.name}>
             <div>
