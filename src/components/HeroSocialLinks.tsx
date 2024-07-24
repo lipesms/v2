@@ -5,7 +5,7 @@ import whatsapp from '../assets/icons/whatsapp.png'
 const HeroSocialLinks = () => {
   return (
     <div
-      className={`order-last flex xl:justify-center gap-6 [&_img]:max-w-10 [&_img]:xl:max-w-16 xl:flex-col xl:order-first`}
+      className={`pt-4 order-last flex justify-center gap-6 [&_img]:max-w-10 [&_img]:xl:max-w-16 xl:flex-col xl:order-first xl:pt-0`}
     >
       <a href="#">
         <img src={github} alt="" />

@@ -9,7 +9,7 @@ const AboutMe = () => {
         <div className="flex flex-col items-center py-8 xl:grid xl:grid-cols-2/5 xl:content-center xl:py-20">
           <img src={profile} alt="" className="md:w-1/2 xl:pe-10 xl:w-fit" />
           <div className="flex flex-col justify-center text-white font-bold">
-            <ul className="flex justify-center gap-12 [&_span]:text-section-active [&_span]:text-3xl [&_p]:text-xl [&_li]:text-center xl:justify-start">
+            <ul className="flex justify-center gap-8 md:gap-12 [&_span]:text-section-active [&_span]:text-3xl [&_p]:text-xl [&_li]:text-center xl:justify-start">
               <li>
                 <span>23</span>
                 <p>Anos</p>
@@ -19,11 +19,11 @@ const AboutMe = () => {
                 <p>Experiências</p>
               </li>
               <li>
-                <span>4+</span>
+                <span>+4</span>
                 <p>Projetos</p>
               </li>
             </ul>
-            <p className="text-lg text-center pt-8 pb-6 xl:text-start">
+            <p className="text-md w-full md:text-lg text-center pt-8 pb-6 xl:text-start">
               Desde que comecei meus estudos, por volta dos 17 anos, passei por
               diversas linguagens de programação, sendo quando fui entender um
               pouco sobre HTML acabei me identificando com as tecnologias de
