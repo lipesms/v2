@@ -20,7 +20,7 @@ const NavBar = () => {
           ></span>
         </div>
         <ul
-          className={`${menuHamburger ? 'hidden relative ' : 'flex absolute top-[96px] left-0 pb-4 justify-center bg-main-color'}  sm:flex w-full h-20 sm:h-auto sm:max-w-[560px] md:max-w-[688px] lg:max-w-[896px] xl:max-w-[1152px] 2xl:max-w-[1408px] w-full sm:mx-auto md:px-0 transition-all duration-200 container  flex items-center flex-wrap gap-4 text-white font-bold [&_li]:transition-all`}
+          className={`${menuHamburger ? 'hidden relative ' : 'flex absolute top-[96px] left-0 pb-16 px-20 justify-center bg-main-color'}  sm:flex w-full h-24 sm:h-auto sm:max-w-[560px] md:max-w-[688px] lg:max-w-[896px] xl:max-w-[1152px] 2xl:max-w-[1408px] w-full sm:mx-auto md:px-0 transition-all duration-200 container  flex items-center flex-wrap gap-4 text-white font-bold [&_li]:transition-all`}
         >
           <li className="text-section-active">
             <a href="">Inicio</a>
