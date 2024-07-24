@@ -16,7 +16,7 @@ const NavBar = () => {
             className={`relative h-0.5 my-1 ${menuHamburger ? 'opacity-100' : 'opacity-0'}`}
           ></span>
           <span
-            className={`relative h-0.5 ${menuHamburger ? 'rotate-0 top-0' : 'rotate-[-135deg] top-[-10px]'}`}
+            className={`relative h-0.5 ${menuHamburger ? 'rotate-0 top-0' : 'rotate-[-135deg] top-[-12px]'}`}
           ></span>
         </div>
         <ul
