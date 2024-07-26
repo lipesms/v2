@@ -1,0 +1,129 @@
+{
+  "apresentation": {
+    "headline": "Olá! Me chamo Felipe Martins, prazer em te conhecer!",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam placerat varius imperdiet. In at congue lorem. Curabitur porttitor sem ac massa ultricies, lacinia feugiat eros molestie. Donec egestas est mattis, cursus libero nec, bibendum tortor. Phasellus at nunc at est suscipit interdum."
+  },
+  "aboutMe": {
+    "text": "Desde que comecei meus estudos, por volta dos 17 anos, passei por diversas linguagens de programação, sendo quando fui entender um pouco sobre HTML acabei me identificando com as tecnologias de front-end, e desde então não larguei mais. Desenvolvi diversos projetos, desde landpages para grandes eventos, softwares de suporte e reimaginação de layouts de empresas. Junto com as tecnologias voltadas parar o desenvolviemnto WEB, como Typescript/Javascript e bibliotecas e frameworks como React e Tailwind, meu foco é aprimorar mais minhas habilidades de front, com projetos reais e escaláveis. No meu tempo livre você vai me ver lendo, saindo pra lugares exóticos com minha namorada, e também sigo com programação, onde desenvolvo pequenos jogos em GML com minha irmã.",
+    "overlay": {
+      "years": 23,
+      "experienceYears": "+2",
+      "projects": "+4"
+    }
+  },
+  "skills": {
+    "frontend": [
+      {"name": "HTML", "percent:": "90%"},
+      {"name": "CSS", "percent:": "85%"},
+      {"name": "Javascript", "percent:": "80%"},
+      {"name": "Typescript", "percent:": "75%"},
+      {"name": "Bootstrap", "percent:": "80%"},
+      {"name": "React", "percent:": "70%"},
+      {"name": "Jest", "percent:": "65%"},
+      {"name": "Gulp", "percent:": "60%"},
+      {"name": "Git", "percent:": "60%"}
+    ],
+    "backend": [
+      {"name":"Python", "percent":"30%"},
+      {"name":"Node", "percent":"25%"},
+      {"name":"Npm", "percent":"55%"},
+      {"name":"MySql", "percent":"35%"}
+    ],
+    "design": [
+      {"name":"Figma", "percent":"50%"},
+      {"name":"Photoshop", "percent":"30%"},
+      {"name":"Canva", "percent":"70%"}
+    ]
+  },
+  "experiences": {
+    "academics": [
+      {
+        "name": "Análise e desenvolvimento de sistemas",
+        "local": "São Paulo - SP",
+        "company": "UNIP",
+        "date": {
+          "start": "02/2018",
+          "end": "02/2018"
+        }
+      },
+      {
+        "name": "Javascript funcional e reativo",
+        "local": "São Paulo - SP",
+        "company": "Udemy",
+        "date": {
+          "start": "02/2018",
+          "end": "02/2018"
+        }
+      },
+      {
+        "name": "Desenvolvedor FullStack Python",
+        "local": "São Paulo - SP",
+        "company": "EBAC",
+        "date": {
+          "start": "02/2018",
+          "end": "02/2018"
+        }
+      }
+    ],
+    "professionals": [
+      {
+        "name": "Analista Backoffice",
+        "local": "São Paulo - SP",
+        "company": "Atento",
+        "date": {
+          "start": "10/2021",
+          "end": "12/2023"
+        }
+      },
+      {
+        "name": "Operador de telemarketing receptivo",
+        "local": "São Paulo - SP",
+        "company": "Multilaser",
+        "date": {
+          "start": "11/2018",
+          "end": "04/2019"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "name": "Trends",
+        "description": "O Trends é um site para quem deseja estar atualizado sobre as novas séries do momento, filmes e famosos, reunindo uma coletanea de informações de primeira para saber mais sobre seus conteudos favoritos.",
+        "image": "https://lipesms.github.io/lsms/src/assets/previewProjects/trends.png",
+        "url": "https://trends-hazel.vercel.app/",
+        "technologies": ["https://lipesms.github.io/v2//src/assets/icons/react.png", "https://lipesms.github.io/v2//src/assets/icons/typescript.png"]
+      },
+      {
+        "name": "Agenda de tarefas",
+        "description": "O projeto se trata de uma página para armazenar tarefas em lista, com design simples para facilitar sua usabilidade, este site foi criado com principal objetivo o estudo e funcionalidades do Redux toolkit.",
+        "image": "https://lipesms.github.io/lsms/src/assets/previewProjects/toDo_preview.png",
+        "url": "https://agenda-de-tarefas-weld.vercel.app/",
+        "technologies": ["https://lipesms.github.io/v2//src/assets/icons/react.png", "https://lipesms.github.io/v2//src/assets/icons/tailwind.png", "https://lipesms.github.io/v2//src/assets/icons/typescript.png"]
+      },
+      {
+        "name": "EFood",
+        "description": "O EFood é uma plataforma onde você pode achar restaurantes selecionados pela sua qualidade e diversidade, fazer seu pedido pelo computador ou celular, e comer sem precisar sair da sua casa. Com uma usabilidade simples você pode fazer todo o pedido de forma fácil independente do lugar que está.",
+        "image": "https://lipesms.github.io/lsms/src/assets/previewProjects/efood.png",
+        "url": "https://e-food-rust.vercel.app/",
+        "technologies": ["https://lipesms.github.io/v2//src/assets/icons/react.png", "https://lipesms.github.io/v2//src/assets/icons/typescript.png"]
+      }
+    ],
+    "contacts": [
+      {
+        "name": "Github",
+        "logo": "",
+        "url": "https://github.com/lipesms"
+      },
+      {
+        "name": "Linkedin",
+        "logo": "",
+        "url": "https://www.linkedin.com/in/lipesms"
+      },
+      {
+        "name": "github",
+        "logo": "",
+        "url": "https://github.com/lipesms"
+      }
+    ]
+  }
+}
