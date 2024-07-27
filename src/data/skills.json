@@ -1,26 +1,25 @@
 {
-  "skills": {
-    "frontend": [
-      {"name": "HTML", "percent:": "90%"},
-      {"name": "CSS", "percent:": "85%"},
-      {"name": "Javascript", "percent:": "80%"},
-      {"name": "Typescript", "percent:": "75%"},
-      {"name": "Bootstrap", "percent:": "80%"},
-      {"name": "React", "percent:": "70%"},
-      {"name": "Jest", "percent:": "65%"},
-      {"name": "Gulp", "percent:": "60%"},
-      {"name": "Git", "percent:": "60%"}
-    ],
-    "backend": [
-      {"name":"Python", "percent":"30%"},
-      {"name":"Node", "percent":"25%"},
-      {"name":"Npm", "percent":"55%"},
-      {"name":"MySql", "percent":"35%"}
-    ],
-    "design": [
-      {"name":"Figma", "percent":"50%"},
-      {"name":"Photoshop", "percent":"30%"},
-      {"name":"Canva", "percent":"70%"}
-    ]
-  }
+  "frontend": [
+    {"name": "HTML", "percent:": "90%"},
+    {"name": "CSS", "percent:": "85%"},
+    {"name": "Javascript", "percent:": "80%"},
+    {"name": "Typescript", "percent:": "75%"},
+    {"name": "Bootstrap", "percent:": "80%"},
+    {"name": "React", "percent:": "70%"},
+    {"name": "Jest", "percent:": "65%"},
+    {"name": "Gulp", "percent:": "60%"},
+    {"name": "Git", "percent:": "60%"}
+  ],
+  "backend": [
+    {"name":"Python", "percent":"30%"},
+    {"name":"Node", "percent":"25%"},
+    {"name":"Npm", "percent":"55%"},
+    {"name":"MySql", "percent":"35%"}
+  ],
+  "design": [
+    {"name":"Figma", "percent":"50%"},
+    {"name":"Photoshop", "percent":"30%"},
+    {"name":"Canva", "percent":"70%"}
+  ]
 }
+

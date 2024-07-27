@@ -1,53 +1,52 @@
 {
-  "experiences": {
-    "academics": [
-      {
-        "name": "Análise e desenvolvimento de sistemas",
-        "local": "São Paulo - SP",
-        "company": "UNIP",
-        "date": {
-          "start": "02/2018",
-          "end": "02/2018"
-        }
-      },
-      {
-        "name": "Javascript funcional e reativo",
-        "local": "São Paulo - SP",
-        "company": "Udemy",
-        "date": {
-          "start": "02/2018",
-          "end": "02/2018"
-        }
-      },
-      {
-        "name": "Desenvolvedor FullStack Python",
-        "local": "São Paulo - SP",
-        "company": "EBAC",
-        "date": {
-          "start": "02/2018",
-          "end": "02/2018"
-        }
+  "academics": [
+    {
+      "name": "Análise e desenvolvimento de sistemas",
+      "local": "São Paulo - SP",
+      "company": "UNIP",
+      "date": {
+        "start": "02/2018",
+        "end": "02/2018"
       }
-    ],
-    "professionals": [
-      {
-        "name": "Analista Backoffice",
-        "local": "São Paulo - SP",
-        "company": "Atento",
-        "date": {
-          "start": "10/2021",
-          "end": "12/2023"
-        }
-      },
-      {
-        "name": "Operador de telemarketing receptivo",
-        "local": "São Paulo - SP",
-        "company": "Multilaser",
-        "date": {
-          "start": "11/2018",
-          "end": "04/2019"
-        }
+    },
+    {
+      "name": "Javascript funcional e reativo",
+      "local": "São Paulo - SP",
+      "company": "Udemy",
+      "date": {
+        "start": "02/2018",
+        "end": "02/2018"
       }
-    ]
-  }
+    },
+    {
+      "name": "Desenvolvedor FullStack Python",
+      "local": "São Paulo - SP",
+      "company": "EBAC",
+      "date": {
+        "start": "02/2018",
+        "end": "02/2018"
+      }
+    }
+  ],
+  "professionals": [
+    {
+      "name": "Analista Backoffice",
+      "local": "São Paulo - SP",
+      "company": "Atento",
+      "date": {
+        "start": "10/2021",
+        "end": "12/2023"
+      }
+    },
+    {
+      "name": "Operador de telemarketing receptivo",
+      "local": "São Paulo - SP",
+      "company": "Multilaser",
+      "date": {
+        "start": "11/2018",
+        "end": "04/2019"
+      }
+    }
+  ]
+
 }

@@ -1,6 +1,5 @@
 {
-  "apresentation": {
-    "headline": "Olá! Me chamo Felipe Martins, prazer em te conhecer!",
-    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam placerat varius imperdiet. In at congue lorem. Curabitur porttitor sem ac massa ultricies, lacinia feugiat eros molestie. Donec egestas est mattis, cursus libero nec, bibendum tortor. Phasellus at nunc at est suscipit interdum."
-  }
+  "headline": "Olá! Me chamo Felipe Martins, prazer em te conhecer!",
+  "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam placerat varius imperdiet. In at congue lorem. Curabitur porttitor sem ac massa ultricies, lacinia feugiat eros molestie. Donec egestas est mattis, cursus libero nec, bibendum tortor. Phasellus at nunc at est suscipit interdum."
+
 }
