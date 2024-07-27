@@ -1,24 +1,17 @@
-import NavBar from './components/Navbar'
-import Hero from './containers/Hero'
-import AboutMe from './containers/AboutMe'
-import Skills from './containers/Skills'
-import Experiences from './containers/Experiences'
-import Projects from './containers/Projects'
-import Contact from './containers/Contact'
-import Footer from './containers/Footer'
+import { Provider } from 'react-redux'
+import { BrowserRouter } from 'react-router-dom'
+
+import { store } from './store'
+
+import Home from './pages/Home'
 
 function App() {
   return (
-    <>
-      <NavBar />
-      <Hero />
-      <AboutMe />
-      <Skills />
-      <Experiences />
-      <Projects />
-      <Contact />
-      <Footer />
-    </>
+    <Provider store={store}>
+      <BrowserRouter>
+        <Home />
+      </BrowserRouter>
+    </Provider>
   )
 }
 

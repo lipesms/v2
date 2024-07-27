@@ -3,8 +3,8 @@ import setaParaBaixo from '../assets/icons/seta-para-baixo.svg'
 
 const AboutMe = () => {
   return (
-    <div className="bg-main-color">
-      <div className="container mx-auto px-10 pt-20 lg:px-16 h-full">
+    <div className="bg-main-color" id="aboutMe">
+      <div className="container mx-auto px-10 pt-28 lg:px-16 h-full">
         <h2 className="text-3xl font-bold text-white">Sobre mim</h2>
         <div className="flex flex-col items-center py-8 xl:grid xl:grid-cols-2/5 xl:content-center xl:py-20">
           <img src={profile} alt="" className="md:w-1/2 xl:pe-10 xl:w-fit" />

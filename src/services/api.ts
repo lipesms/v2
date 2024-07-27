@@ -3,15 +3,37 @@ import { PortfolioProps } from '../types'
 
 const api = createApi({
   baseQuery: fetchBaseQuery({
-    baseUrl: 'https://lipesms.github.io/v2//src/data.json'
+    baseUrl: 'https://lipesms.github.io/v2//src/data'
   }),
   endpoints: (builder) => ({
-    getProfileData: builder.query<PortfolioProps, void>({
-      query: () => ''
+    getApresentationData: builder.query<PortfolioProps, void>({
+      query: () => '/apresentation.json'
+    }),
+    getAboutMeData: builder.query<PortfolioProps, void>({
+      query: () => '/aboutMe.json'
+    }),
+    getSkillsData: builder.query<PortfolioProps, void>({
+      query: () => '/skills.json'
+    }),
+    getExperiencesData: builder.query<PortfolioProps, void>({
+      query: () => '/experiences.json'
+    }),
+    getProjectsData: builder.query<PortfolioProps, void>({
+      query: () => '/projects.json'
+    }),
+    getContactsData: builder.query<PortfolioProps, void>({
+      query: () => '/contacts.json'
     })
   })
 })
 
-export const { useGetProfileDataQuery } = api
+export const {
+  useGetApresentationDataQuery,
+  useGetAboutMeDataQuery,
+  useGetSkillsDataQuery,
+  useGetExperiencesDataQuery,
+  useGetProjectsDataQuery,
+  useGetContactsDataQuery
+} = api
 
 export default api

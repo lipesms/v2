@@ -1,0 +1,10 @@
+{
+  "aboutMe": {
+    "text": "Desde que comecei meus estudos, por volta dos 17 anos, passei por diversas linguagens de programação, sendo quando fui entender um pouco sobre HTML acabei me identificando com as tecnologias de front-end, e desde então não larguei mais. Desenvolvi diversos projetos, desde landpages para grandes eventos, softwares de suporte e reimaginação de layouts de empresas. Junto com as tecnologias voltadas parar o desenvolviemnto WEB, como Typescript/Javascript e bibliotecas e frameworks como React e Tailwind, meu foco é aprimorar mais minhas habilidades de front, com projetos reais e escaláveis. No meu tempo livre você vai me ver lendo, saindo pra lugares exóticos com minha namorada, e também sigo com programação, onde desenvolvo pequenos jogos em GML com minha irmã.",
+    "overlay": {
+      "years": 23,
+      "experienceYears": "+2",
+      "projects": "+4"
+    }
+  }
+}

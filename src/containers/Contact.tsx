@@ -5,8 +5,8 @@ import location from '../assets/icons/localizacao.png'
 
 const Contact = () => {
   return (
-    <div className="bg-main-color ">
-      <div className="container mx-auto px-10 pt-20 lg:px-16 h-full">
+    <div className="bg-main-color" id="contacts">
+      <div className="container mx-auto px-10 pt-28 lg:px-16 h-full">
         <h2 className="text-white font-bold text-3xl">Contato</h2>
         <div className="flex flex-col xl:flex-row">
           <div className="flex flex-col grow gap-4 [&_img]:w-11 [&_img]:xl:w-11 text-white font-bold text-2xl py-8 xl:text-3xl xl:py-20">

@@ -3,8 +3,8 @@ import react from '../assets/icons/react.png'
 import typescript from '../assets/icons/typescript.png'
 import tailwind from '../assets/icons/tailwind.png'
 
-import trends from '../assets/images/trends.png'
-import toDo from '../assets/images/toDo.png'
+import trends from '../assets/images/projects/trends.png'
+import toDo from '../assets/images/projects/toDo.png'
 
 const projets = [
   {
@@ -44,7 +44,10 @@ const projets = [
 const Projects = () => {
   return (
     <div className="bg-main-color">
-      <div className="container mx-auto px-10 pt-20 lg:px-16 h-full">
+      <div
+        className="container mx-auto px-10 pt-28 lg:px-16 h-full"
+        id="projects"
+      >
         <h2 className="text-white font-bold text-3xl">Projetos</h2>
         <div className="flex flex-col gap-16 text-white font-bold py-8 md:flex-row md:flex-wrap xl:py-20">
           {projets.map((project, index) => {
