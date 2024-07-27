@@ -4,35 +4,35 @@
     "description": "O Trends é um site para quem deseja estar atualizado sobre as novas séries do momento, filmes e famosos, reunindo uma coletanea de informações de primeira para saber mais sobre seus conteudos favoritos.",
     "image": "https://lipesms.github.io/v2//src/assets/images/projects/trends.png",
     "url": "https://trends-hazel.vercel.app/",
-    "technologies": ["https://lipesms.github.io/v2//src/assets/icons/react.png", "https://lipesms.github.io/v2//src/assets/icons/typescript.png"]
+    "technologies": ["https://lipesms.github.io/v2//src/assets/icons/technologies/react.png", "https://lipesms.github.io/v2//src/assets/icons/technologies/typescript.png", "https://lipesms.github.io/v2//src/assets/icons/technologies/tailwind.png"]
   },
   {
     "name": "Agenda de tarefas",
     "description": "O projeto se trata de uma página para armazenar tarefas em lista, com design simples para facilitar sua usabilidade, este site foi criado com principal objetivo o estudo e funcionalidades do Redux toolkit.",
     "image": "https://lipesms.github.io/v2//src/assets/images/projects/toDo.png",
     "url": "https://agenda-de-tarefas-weld.vercel.app/",
-    "technologies": ["https://lipesms.github.io/v2//src/assets/icons/react.png", "https://lipesms.github.io/v2//src/assets/icons/tailwind.png", "https://lipesms.github.io/v2//src/assets/icons/typescript.png"]
+    "technologies": ["https://lipesms.github.io/v2//src/assets/icons/technologies/react.png", "https://lipesms.github.io/v2//src/assets/icons/technologies/typescript.png"]
   },
   {
     "name": "EFood",
     "description": "O EFood é uma plataforma onde você pode achar restaurantes selecionados pela sua qualidade e diversidade, fazer seu pedido pelo computador ou celular, e comer sem precisar sair da sua casa. Com uma usabilidade simples você pode fazer todo o pedido de forma fácil independente do lugar que está.",
-    "image": "https://lipesms.github.io/v2//src/assets/images/projects/efood.png",
+    "image": "https://lipesms.github.io/v2//src/assets/images/projects/eFood.png",
     "url": "https://e-food-rust.vercel.app/",
-    "technologies": ["https://lipesms.github.io/v2//src/assets/icons/react.png", "https://lipesms.github.io/v2//src/assets/icons/typescript.png"]
+    "technologies": ["https://lipesms.github.io/v2//src/assets/icons/technologies/react.png", "https://lipesms.github.io/v2//src/assets/icons/technologies/typescript.png"]
   },
   {
     "name": "Beetlejuice: O musical",
     "description": "O projeto se trata de uma landpage com foco em passar informações da peça de teatro da broadway: “Beetlejuice - O musical, o musical, o musical” dentro de um design conciso e com foco na experiencia do usuário.",
     "image": "https://lipesms.github.io/v2//src/assets/images/projects/beetlejuice.png",
     "url": "https://beetlejuice-o-musical-landpage.vercel.app/",
-    "technologies": ["https://lipesms.github.io/v2//src/assets/icons/react.png", "https://lipesms.github.io/v2//src/assets/icons/typescript.png"]
+    "technologies": ["https://lipesms.github.io/v2//src/assets/icons/technologies/html.png", "https://lipesms.github.io/v2//src/assets/icons//technologies/javascript.png", "https://lipesms.github.io/v2//src/assets/icons//technologies/sass.png"]
   },
   {
     "name": "Rating component",
     "description": "O Rating component é um software simples para medir a satisfação dos usuários com determinada experiência, seja em sites, ou atendimentos presenciais, como em farmácias ou lojas no geral.",
     "image": "https://lipesms.github.io/v2//src/assets/images/projects/ratingComponent.png",
     "url": "https://rating-component-three-tau.vercel.app/",
-    "technologies": ["https://lipesms.github.io/v2//src/assets/icons/react.png", "https://lipesms.github.io/v2//src/assets/icons/typescript.png"]
+    "technologies": ["https://lipesms.github.io/v2//src/assets/icons/technologies/html.png", "https://lipesms.github.io/v2//src/assets/icons//technologies/css.png", "https://lipesms.github.io/v2//src/assets/icons//technologies/javascript.png"]
   }
 ]
 
