@@ -1,14 +1,14 @@
 {
   "frontend": [
-    {"name": "HTML", "percent:": 90},
-    {"name": "CSS", "percent:": 85},
-    {"name": "Javascript", "percent:": 80},
-    {"name": "Typescript", "percent:": 75},
-    {"name": "Bootstrap", "percent:": 80},
-    {"name": "React", "percent:": 70},
-    {"name": "Jest", "percent:": 65},
-    {"name": "Gulp", "percent:": 60},
-    {"name": "Git", "percent:": 60}
+    {"name": "HTML", "percent": 90},
+    {"name": "CSS", "percent": 85},
+    {"name": "Javascript", "percent": 80},
+    {"name": "Typescript", "percent": 75},
+    {"name": "Bootstrap", "percent": 80},
+    {"name": "React", "percent": 70},
+    {"name": "Jest", "percent": 65},
+    {"name": "Gulp", "percent": 60},
+    {"name": "Git", "percent": 60}
   ],
   "backend": [
     {"name":"Python", "percent":30},
