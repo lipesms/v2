@@ -12,7 +12,10 @@ export default {
         navBar: '#030508',
         'section-active': '#FF79B5',
         'radial-blue': '#1F41BB',
-        'gray-20%': 'rgba(184,184,184,0.2)'
+        'gray-20%': 'rgba(184,184,184,0.2)',
+        'overlay-email': '#080808d9',
+        red: 'rgb(255 85 85 / 72%)',
+        green: 'rgb(85 255 154 / 72%)'
       },
       backgroundImage: {
         'hero-image':

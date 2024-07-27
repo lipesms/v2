@@ -6,6 +6,7 @@ import Experiences from '../containers/Experiences'
 import Projects from '../containers/Projects'
 import Contact from '../containers/Contact'
 import Footer from '../containers/Footer'
+import EmailComponent from '../components/EmailComponent'
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
       <Projects />
       <Contact />
       <Footer />
+      <EmailComponent />
     </>
   )
 }

@@ -2,8 +2,11 @@ import HeroSocialLinks from '../components/HeroSocialLinks'
 
 import welcomeCodeImage from '../assets/images/welcomeCode.png'
 import { useGetApresentationDataQuery } from '../services/api'
+import { useDispatch } from 'react-redux'
+import { toogleOpenEmailMenu } from '../store/reducers/email'
 
 const Hero = () => {
+  const dispatch = useDispatch()
   const { data } = useGetApresentationDataQuery()
 
   if (data) {
@@ -33,7 +36,10 @@ const Hero = () => {
             <p className="text-xl text-center xl:w-4/5 xl:text-start">
               {data.text}
             </p>
-            <button className="px-4 py-4 text-xl bg-buttonLinear rounded-full cursor-pointer max-w-52 hover:shadow-[5px_5px_14px_0_#686868ad] hover:scale-110 transition-all duration-200">
+            <button
+              className="px-4 py-4 text-xl bg-buttonLinear rounded-full cursor-pointer max-w-52 hover:shadow-[5px_5px_14px_0_#686868ad] hover:scale-110 transition-all duration-200"
+              onClick={() => dispatch(toogleOpenEmailMenu())}
+            >
               Entre em contato
             </button>
           </div>
