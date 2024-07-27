@@ -3,16 +3,19 @@
   "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam placerat varius imperdiet. In at congue lorem. Curabitur porttitor sem ac massa ultricies, lacinia feugiat eros molestie. Donec egestas est mattis, cursus libero nec, bibendum tortor. Phasellus at nunc at est suscipit interdum.",
   "contacts": [
     {
+      "name":"github",
       "url": "https://www.github.com/lipesms",
       "logo": "https://lipesms.github.io/v2//src/assets/icons/contacts/github_pink.png"
     },
     {
+      "name":"linkedin",
       "url": "https://www.linkedin.com/in/lipesms",
       "logo": "https://lipesms.github.io/v2//src/assets/icons/contacts/linkedin_pink.png"
     },
     {
+      "name":"whatsapp",
       "url": "https://wa.me/11963040780",
-      "logo": "https://lipesms.github.io/v2//src/assets/icons/contacts/whatsapp_pink"
+      "logo": "https://lipesms.github.io/v2//src/assets/icons/contacts/whatsapp_pink.png"
     }
   ]
 }
