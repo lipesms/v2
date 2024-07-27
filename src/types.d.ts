@@ -3,7 +3,7 @@ export type SkillsType = {
   percent: number
 }
 
-type ExperiencesType = {
+export type ExperiencesType = {
   name: string
   local: string
   company: string
@@ -13,9 +13,16 @@ type ExperiencesType = {
   }
 }
 
+export type HeroContacs = {
+  name: string
+  url: string
+  logo: string
+}
+
 export type Apresentation = {
   headline: string
   text: string
+  contacts: HeroContacs[]
 }
 
 export type AboutMe = {

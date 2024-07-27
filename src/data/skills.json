@@ -11,15 +11,15 @@
     {"name": "Git", "percent": 60}
   ],
   "backend": [
-    {"name":"Python", "percent":30},
-    {"name":"Node", "percent":25},
-    {"name":"Npm", "percent":55},
-    {"name":"MySql", "percent":35}
+    {"name":"Python", "percent": 30},
+    {"name":"Node", "percent": 25},
+    {"name":"Npm", "percent": 55},
+    {"name":"MySql", "percent": 35}
   ],
   "design": [
-    {"name":"Figma", "percent":50},
-    {"name":"Photoshop", "percent":30},
-    {"name":"Canva", "percent":70}
+    {"name":"Figma", "percent": 50},
+    {"name":"Photoshop", "percent": 30},
+    {"name":"Canva", "percent": 70}
   ]
 }
 

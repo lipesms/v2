@@ -1,22 +1,10 @@
-import github from '../assets/icons/github.png'
-import linkedin from '../assets/icons/linkedin.png'
-import whatsapp from '../assets/icons/whatsapp.png'
+import { HeroContacs } from '../types'
 
-const HeroSocialLinks = () => {
+const HeroSocialLinks = ({ url, logo, name }: HeroContacs) => {
   return (
-    <div
-      className={`pt-4 order-last flex justify-center gap-6 [&_img]:max-w-10 [&_img]:xl:max-w-16 xl:flex-col xl:order-first xl:pt-0`}
-    >
-      <a href="#">
-        <img src={github} alt="" />
-      </a>
-      <a href="#">
-        <img src={linkedin} alt="" />
-      </a>
-      <a href="#">
-        <img src={whatsapp} alt="" />
-      </a>
-    </div>
+    <a href={url} target="_blank" rel="noreferrer">
+      <img src={logo} alt={`${name} logo`} />
+    </a>
   )
 }
 

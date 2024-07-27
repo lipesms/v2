@@ -1,24 +1,15 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { HashLink } from 'react-router-hash-link'
 import { useDispatch, useSelector } from 'react-redux'
 
 import { RootReducer } from '../store'
 import { changeSection } from '../store/reducers/navbar'
-import { useGetProfileDataQuery } from '../services/api'
-import { updateInfos } from '../store/reducers/profileData'
 
 const NavBar = () => {
   const [menuHamburger, setMeuHambuerger] = useState(true)
 
   const { sections } = useSelector((state: RootReducer) => state.navBar)
   const dispatch = useDispatch()
-  const { data } = useGetProfileDataQuery()
-
-  useEffect(() => {
-    if (data) {
-      dispatch(updateInfos(data))
-    }
-  }, [data, dispatch])
 
   return (
     <div className="fixed z-20 lg:bg-navBar w-screen bg-main-color select-none">
