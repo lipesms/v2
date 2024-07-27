@@ -1,19 +1,18 @@
-{
-  "contacts": [
-    {
-      "name": "Github",
-      "logo": "",
-      "url": "https://github.com/lipesms"
-    },
-    {
-      "name": "Linkedin",
-      "logo": "",
-      "url": "https://www.linkedin.com/in/lipesms"
-    },
-    {
-      "name": "github",
-      "logo": "",
-      "url": "https://github.com/lipesms"
-    }
-  ]
-}
+[
+  {
+    "name": "Github",
+    "logo": "",
+    "url": "https://github.com/lipesms"
+  },
+  {
+    "name": "Linkedin",
+    "logo": "",
+    "url": "https://www.linkedin.com/in/lipesms"
+  },
+  {
+    "name": "github",
+    "logo": "",
+    "url": "https://github.com/lipesms"
+  }
+]
+
