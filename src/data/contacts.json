@@ -1,17 +1,17 @@
 [
   {
     "name": "Github",
-    "logo": "",
+    "logo": "https://lipesms.github.io/v2//src/assets/icons/contacts/github.png",
     "url": "https://github.com/lipesms"
   },
   {
     "name": "Linkedin",
-    "logo": "",
+    "logo": "https://lipesms.github.io/v2//src/assets/icons/contacts/linkedin.png",
     "url": "https://www.linkedin.com/in/lipesms"
   },
   {
-    "name": "github",
-    "logo": "",
+    "name": "Email",
+    "logo": "https://lipesms.github.io/v2//src/assets/icons/contacts/email.png",
     "url": "https://github.com/lipesms"
   }
 ]

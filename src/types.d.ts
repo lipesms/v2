@@ -1,6 +1,6 @@
-type SkillsType = {
+export type SkillsType = {
   name: string
-  percent: string
+  percent: number
 }
 
 type ExperiencesType = {
@@ -13,7 +13,32 @@ type ExperiencesType = {
   }
 }
 
-type Project = {
+export type Apresentation = {
+  headline: string
+  text: string
+}
+
+export type AboutMe = {
+  text: string
+  overlay: {
+    years: number
+    experienceYears: string
+    projects: string
+  }
+}
+
+export type Skills = {
+  frontend: SkillsType[]
+  backend: SkillsType[]
+  design: SkillsType[]
+}
+
+export type Experiences = {
+  academics: ExperiencesType[]
+  professionals: ExperiencesType[]
+}
+
+export type Project = {
   name: string
   description: string
   image: string
@@ -21,34 +46,17 @@ type Project = {
   technologies: string[]
 }
 
-type Contact = {
+export type Contact = {
   name: string
   logo: string
   url: string
 }
 
 export type PortfolioProps = {
-  apresentation: {
-    headline: string
-    text: string
-  }
-  aboutMe: {
-    text: string
-    overlay: {
-      years: number
-      experienceYears: string
-      projects: string
-    }
-  }
-  skills: {
-    frontend: SkillsType[]
-    backend: SkillsType[]
-    design: SkillsType[]
-  }
-  experiences: {
-    academics: ExperiencesType[]
-    professionals: ExperiencesType[]
-  }
+  apresentation: Apresentation
+  aboutMe: AboutMe
+  skills: Skills
+  experiences: Experiences
   projects: Project[]
   contacts: Contact[]
 }
