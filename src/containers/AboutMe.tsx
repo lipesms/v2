@@ -7,6 +7,7 @@ const AboutMe = () => {
   const { data } = useGetAboutMeDataQuery()
 
   if (data) {
+    console.log(data)
     return (
       <div className="bg-main-color" id="aboutMe">
         <div className="container mx-auto px-10 pt-28 lg:px-16 h-full">
@@ -31,10 +32,16 @@ const AboutMe = () => {
               <p className="text-md w-full md:text-lg text-center pt-8 pb-6 xl:text-start">
                 {data.text}
               </p>
-              <button className="flex self-center bg-section-active text-black py-4 px-4 rounded-full w-fit cursor-pointer hover:scale-110 transition-all duration-200">
+              <a
+                className="flex self-center bg-section-active text-black py-4 px-4 rounded-full w-fit cursor-pointer hover:scale-110 transition-all duration-200"
+                href={`${data.curriculum}`}
+                download
+                target="_blank"
+                rel="noreferrer"
+              >
                 Baixar CV
                 <img src={setaParaBaixo} className="max-h-6 ps-2" />
-              </button>
+              </a>
             </div>
           </div>
         </div>
