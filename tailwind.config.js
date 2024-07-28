@@ -18,8 +18,10 @@ export default {
         green: 'rgb(85 255 154 / 72%)'
       },
       backgroundImage: {
-        'hero-image':
+        'desktop-hero-image':
           'url("https://lipesms.github.io/v2//src/assets/images/background.png")',
+        'mobile-hero-image':
+          'url("https://lipesms.github.io/v2//src/assets/images/background_mobile.png")',
         'hero-pattern':
           'linear-gradient(to top, #101728, transparent, transparent, transparent, transparent);',
         buttonLinear: 'linear-gradient(to right, #FF79B5, #5C80FF);'
