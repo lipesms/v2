@@ -16,7 +16,7 @@ const Hero = () => {
         id="home"
       >
         <span className="-z-10 h-full w-full absolute top-0 left-0 bg-mobile-hero-image lg:bg-desktop-hero-image block bg-no-repeat bg-cover"></span>
-        <div className="container mx-auto px-10 xl:px-16 flex flex-col gap-8 pt-40 justify-between w-full h-full xl:flex-row">
+        <div className="container mx-auto px-10 xl:px-16 flex flex-col gap-8 pt-32 justify-between w-full h-full xl:flex-row">
           <div
             className={`pt-4 order-last flex justify-center gap-6 [&_img]:max-w-10 [&_img]:xl:max-w-16 xl:flex-col xl:order-first xl:pt-0`}
           >
