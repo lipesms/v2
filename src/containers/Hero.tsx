@@ -12,11 +12,11 @@ const Hero = () => {
   if (data) {
     return (
       <div
-        className="relative bg-main-color pb-16 xl:h-screen  lg:bg-transparent lg:bg-hero-pattern"
+        className="relative pb-16 xl:h-screen lg:bg-transparent bg-hero-pattern"
         id="home"
       >
-        <span className="-z-10 h-full w-full absolute top-0 left-0 bg-hero-image block lg:bg-no-repeat lg:bg-cover"></span>
-        <div className="container mx-auto px-10 xl:px-16 flex flex-col gap-8 pt-32 justify-between w-full h-full xl:flex-row">
+        <span className="-z-10 h-full w-full absolute top-0 left-0 bg-mobile-hero-image lg:bg-desktop-hero-image block bg-no-repeat bg-cover"></span>
+        <div className="container mx-auto px-10 xl:px-16 flex flex-col gap-8 pt-40 justify-between w-full h-full xl:flex-row">
           <div
             className={`pt-4 order-last flex justify-center gap-6 [&_img]:max-w-10 [&_img]:xl:max-w-16 xl:flex-col xl:order-first xl:pt-0`}
           >
