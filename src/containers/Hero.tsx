@@ -12,7 +12,7 @@ const Hero = () => {
   if (data) {
     return (
       <div
-        className="relative pb-16 xl:h-screen lg:bg-transparent bg-hero-pattern"
+        className="relative xl:h-screen lg:bg-transparent bg-hero-pattern"
         id="home"
       >
         <span className="-z-10 h-full w-full absolute top-0 left-0 bg-mobile-hero-image lg:bg-desktop-hero-image block bg-no-repeat bg-cover"></span>

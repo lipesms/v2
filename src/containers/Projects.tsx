@@ -11,7 +11,9 @@ const Projects = () => {
           className="container mx-auto px-10 pt-28 lg:px-16 h-full"
           id="projects"
         >
-          <h2 className="text-white font-bold text-3xl">Projetos</h2>
+          <h2 className="text-white font-bold text-2xl md:text-3xl">
+            Projetos
+          </h2>
           <div className="flex flex-col gap-16 text-white font-bold py-8 md:flex-row md:flex-wrap xl:py-20">
             {data.map((project, index) => {
               const isOdd = index % 2 == 0
