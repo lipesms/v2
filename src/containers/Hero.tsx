@@ -43,11 +43,11 @@ const Hero = () => {
               Entre em contato
             </button>
           </div>
-          <div className="relative flex flex-col items-center justify-center">
+          <div className="relative flex flex-col items-center justify-center animate-float translate-y-0">
             <img
               src={welcomeCodeImage}
               alt=""
-              className="relative rounded-xl max-w-xs md:max-w-md lg:max-w-lg xl:max-w-xl shadow-[15px_10px_0px_0px_#FF79B4] md:shadow-[25px_20px_0px_0px_#FF79B4]"
+              className="relative rounded-xl max-w-xs md:max-w-md lg:max-w-lg xl:max-w-xl shadow-[15px_10px_0px_0px_#FF79B4] md:shadow-[25px_20px_0px_0px_#FF79B4]  "
             />
           </div>
         </div>

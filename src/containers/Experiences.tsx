@@ -12,7 +12,7 @@ const Experiences = () => {
       <div className="bg-main-color" id="experiences">
         <div className="container mx-auto px-10 pt-28 lg:px-16 h-full ">
           <h2 className="text-white font-bold text-3xl">Experiências</h2>
-          <div className="[&_button]:text-2xl [&_button]:xl:text-3xl [&_button]:font-bold [&_button]:me-4 py-8 xl:py-20">
+          <div className="[&_button]:text-2xl [&_button]:xl:text-3xl [&_button]:font-bold [&_button]:me-4 pt-8 xl:pt-20">
             <div className="flex w-fit m-auto my-8 xl:mb-24 [&_button]:transition-all [&_button]:duration-200 ">
               <button
                 className={`${infos === 'academics' ? 'text-section-active' : 'text-white'} hover:text-section-active transition-all`}

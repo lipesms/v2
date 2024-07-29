@@ -12,7 +12,7 @@ const AboutMe = () => {
       <div className="bg-main-color" id="aboutMe">
         <div className="container mx-auto px-10 pt-28 lg:px-16 h-full">
           <h2 className="text-3xl font-bold text-white">Sobre mim</h2>
-          <div className="flex flex-col items-center py-8 xl:grid xl:grid-cols-2/5 xl:content-center xl:py-20">
+          <div className="flex flex-col items-center pt-8 xl:grid xl:grid-cols-2/5 xl:content-center xl:pt-20">
             <img src={profile} alt="" className="md:w-1/2 xl:pe-10 xl:w-fit" />
             <div className="flex flex-col justify-center text-white font-bold">
               <ul className="flex justify-center gap-8 md:gap-12 [&_span]:text-section-active [&_span]:text-3xl [&_p]:text-xl [&_li]:text-center xl:justify-start">

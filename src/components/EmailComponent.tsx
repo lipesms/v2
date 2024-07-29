@@ -1,15 +1,42 @@
 import { useDispatch, useSelector } from 'react-redux'
+import emailjs from '@emailjs/browser'
 
 import { RootReducer } from '../store'
 import { toogleOpenEmailMenu } from '../store/reducers/email'
+import { FormEvent, useState } from 'react'
 
 const EmailComponent = () => {
-  const key = '50967bea-35ef-45bf-828c-607a23dfca2b'
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('')
+  const [sented, setSented] = useState(false)
   const { isOpen } = useSelector((state: RootReducer) => state.email)
 
   const dispatch = useDispatch()
 
-  console.log(isOpen)
+  function handleSubmit(e: FormEvent) {
+    e.preventDefault()
+
+    const templateParams = {
+      from_name: name,
+      message: message,
+      email: email
+    }
+    emailjs
+      .send(
+        'service_yb1nckl',
+        'template_7wzq3lj',
+        templateParams,
+        'tcncOD4iQHSLiTPDL'
+      )
+      .then((response) => {
+        console.log('email enviado', response.status, response.text)
+        setName('')
+        setEmail('')
+        setMessage('')
+        setSented(true)
+      })
+  }
 
   return (
     <div
@@ -20,28 +47,37 @@ const EmailComponent = () => {
         onClick={() => dispatch(toogleOpenEmailMenu())}
       ></span>
       <form
-        action="https://api.staticforms.xyz/submit"
         method="post"
-        className="z-40 flex flex-col gap-6 p-8 bg-buttonLinear rounded-2xl text-lg md:min-w-96"
+        className={`${sented ? 'hidden' : 'flex'} z-40  flex-col gap-6 p-8 bg-background rounded-2xl text-lg md:min-w-96 text-white`}
+        onSubmit={handleSubmit}
       >
-        <h3 className="text-center font-bold text-3xl text-white">Contato</h3>
+        <h3 className="text-center font-bold text-3xl">Contato</h3>
         <input
           name="name"
           type="text"
           placeholder="Nome"
-          className="p-2 outline-0 rounded-lg"
+          className="p-2 outline-0 rounded-lg border bg-transparent "
+          onChange={(e) => setName(e.target.value)}
+          value={name}
+          required
         />
         <input
           name="email"
           type="email"
           placeholder="Seu e-mail"
-          className="p-2 outline-0 rounded-lg"
+          className="p-2 outline-0 rounded-lg border bg-transparent"
+          onChange={(e) => setEmail(e.target.value)}
+          value={email}
+          required
         />
         <textarea
           name="message"
           rows={5}
-          className="p-2 outline-0 rounded-lg"
+          className="p-2 outline-0 rounded-lg border bg-transparent"
           placeholder="Escreva sua mensagem"
+          onChange={(e) => setMessage(e.target.value)}
+          value={message}
+          required
         ></textarea>
         <div className="self-end">
           <button
@@ -59,8 +95,19 @@ const EmailComponent = () => {
             Enviar
           </button>
         </div>
-        <input type="hidden" name="accessKey" value={key}></input>
       </form>
+      <div
+        className={`${sented ? 'flex' : 'hidden'} z-40  flex-col gap-6 p-20 bg-background rounded-2xl text-lg md:min-w-96 text-white`}
+      >
+        <p className="text-3xl font-bold">Obrigado pela mensagem!</p>
+        <p className="text-center">Em breve entrarei em contato. 😉</p>
+        <button
+          className="bg-buttonLinear p-2 text-lg rounded-lg"
+          onClick={() => dispatch(toogleOpenEmailMenu())}
+        >
+          Fechar
+        </button>
+      </div>
     </div>
   )
 }

@@ -14,7 +14,7 @@ const Projects = () => {
           <h2 className="text-white font-bold text-2xl md:text-3xl">
             Projetos
           </h2>
-          <div className="flex flex-col gap-16 text-white font-bold py-8 md:flex-row md:flex-wrap xl:py-20">
+          <div className="flex flex-col gap-16 text-white font-bold pt-8 md:flex-row md:flex-wrap xl:pt-20">
             {data.map((project, index) => {
               const isOdd = index % 2 == 0
               return (
@@ -53,7 +53,7 @@ const Projects = () => {
                     className="width-full rounded-2xl xl:w-1/2"
                   />
                   <span
-                    className={`group-hover:w-full group-hover:h-full group-hover:translate-y-[0px] transition-all duration-200 hidden absolute top-0 ${isOdd ? 'left-0' : 'right-0'} translate-x-[0] translate-y-[30px] xl:block w-7/12 h-5/6 bg-[#1B1B1Bc7] rounded-xl`}
+                    className={`group-hover:w-full group-hover:h-full group-hover:translate-y-[0px] transition-all duration-200 hidden absolute top-0 ${isOdd ? 'left-0' : 'right-0'} translate-x-[0] translate-y-[30px] xl:block w-7/12 h-5/6 bg-[#0000003b] rounded-xl`}
                   ></span>
                 </a>
               )
