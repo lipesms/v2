@@ -11,10 +11,7 @@ const Hero = () => {
 
   if (data) {
     return (
-      <section
-        className=" min-h-screen relative xl:h-screen lg:bg-transparent bg-hero-pattern"
-        id="home"
-      >
+      <section className=" min-h-screen relative xl:h-screen lg:bg-transparent bg-hero-pattern">
         <span className="-z-10 h-full w-full absolute top-0 left-0 bg-mobile-hero-image lg:bg-desktop-hero-image block bg-no-repeat bg-cover"></span>
         <div className="container mx-auto px-10 xl:px-16 flex flex-col gap-8 pt-32 justify-between w-full h-full xl:flex-row">
           <div

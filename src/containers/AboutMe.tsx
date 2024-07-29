@@ -10,7 +10,7 @@ const AboutMe = () => {
   if (data) {
     console.log(data)
     return (
-      <section className="bg-main-color overflow-hidden" id="aboutMe">
+      <section className="bg-main-color overflow-hidden" id="sobre">
         <motion.div
           initial={{ opacity: 0, transform: 'translatex(-100px)' }}
           whileInView={{ opacity: 1, transform: 'translatex(0)' }}

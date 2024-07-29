@@ -7,14 +7,13 @@ const Projects = () => {
 
   if (data) {
     return (
-      <section className="bg-main-color overflow-hidden">
+      <section className="bg-main-color overflow-hidden" id="projetos">
         <motion.div
           initial={{ opacity: 0, transform: 'translatex(200px)' }}
           whileInView={{ opacity: 1, transform: 'translatex(0)' }}
           transition={{ delay: 0.5 }}
           viewport={{ once: true }}
           className="container mx-auto px-10 pt-28 lg:px-16 h-full"
-          id="projects"
         >
           <h2 className="text-white font-bold text-2xl md:text-3xl">
             Projetos

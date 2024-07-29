@@ -6,7 +6,7 @@ const Skills = () => {
   const { data } = useGetSkillsDataQuery()
   if (data) {
     return (
-      <section className="bg-main-color overflow-hidden" id="skills">
+      <section className="bg-main-color overflow-hidden" id="tecnologias">
         <motion.div
           initial={{ opacity: 0, transform: 'translatex(200px)' }}
           whileInView={{ opacity: 1, transform: 'translatex(0)' }}

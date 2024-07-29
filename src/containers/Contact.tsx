@@ -7,7 +7,7 @@ const Contact = () => {
   const { data } = useGetContactsDataQuery()
   if (data) {
     return (
-      <section className="bg-main-color overflow-hidden" id="contacts">
+      <section className="bg-main-color overflow-hidden" id="contato">
         <motion.div
           initial={{ opacity: 0, transform: 'translatex(-100px)' }}
           whileInView={{ opacity: 1, transform: 'translatex(0)' }}

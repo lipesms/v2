@@ -41,37 +41,37 @@ const NavBar = ({ className }: Props) => {
             className={`${sections === 'home' ? 'text-section-active' : 'hover:text-section-active'}`}
             onClick={() => dispatch(changeSection('home'))}
           >
-            <HashLink to="#home">Inicio</HashLink>
+            <HashLink to="#">Inicio</HashLink>
           </li>
           <li
             className={`${sections === 'aboutMe' ? 'text-section-active' : 'hover:text-section-active'}`}
             onClick={() => dispatch(changeSection('aboutMe'))}
           >
-            <HashLink to="#aboutMe">Sobre mim</HashLink>
+            <HashLink to="#sobre">Sobre mim</HashLink>
           </li>
           <li
             className={`${sections === 'skills' ? 'text-section-active' : 'hover:text-section-active'}`}
             onClick={() => dispatch(changeSection('skills'))}
           >
-            <HashLink to="#skills">Habilidades</HashLink>
+            <HashLink to="#tecnologias">Habilidades</HashLink>
           </li>
           <li
             className={`${sections === 'experiences' ? 'text-section-active' : 'hover:text-section-active'}`}
             onClick={() => dispatch(changeSection('experiences'))}
           >
-            <HashLink to="#experiences">Experiências</HashLink>
+            <HashLink to="#experiencias">Experiências</HashLink>
           </li>
           <li
             className={`${sections === 'projects' ? 'text-section-active' : 'hover:text-section-active'}`}
             onClick={() => dispatch(changeSection('projects'))}
           >
-            <HashLink to="#projects">Projetos</HashLink>
+            <HashLink to="#projetos">Projetos</HashLink>
           </li>
           <li
             className={`${sections === 'contacts' ? 'text-section-active' : 'hover:text-section-active'}`}
             onClick={() => dispatch(changeSection('contacts'))}
           >
-            <HashLink to="#contacts">Contato</HashLink>
+            <HashLink to="#contato">Contato</HashLink>
           </li>
         </ul>
       </div>
