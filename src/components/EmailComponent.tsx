@@ -84,6 +84,7 @@ const EmailComponent = () => {
             className="p-2 text-lg me-4 bg-red rounded-lg te"
             type="reset"
             value="clean"
+            onClick={() => dispatch(toogleOpenEmailMenu())}
           >
             Cancelar
           </button>

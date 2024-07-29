@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import ContactButton from '../components/ContactButton'
 import location from '../assets/icons/localizacao.png'
 import { useGetContactsDataQuery } from '../services/api'
@@ -6,8 +7,14 @@ const Contact = () => {
   const { data } = useGetContactsDataQuery()
   if (data) {
     return (
-      <div className="bg-main-color" id="contacts">
-        <div className="container mx-auto px-10 pt-28 lg:px-16 h-full">
+      <section className="bg-main-color overflow-hidden" id="contacts">
+        <motion.div
+          initial={{ opacity: 0, transform: 'translatex(-100px)' }}
+          whileInView={{ opacity: 1, transform: 'translatex(0)' }}
+          transition={{ delay: 0.5 }}
+          viewport={{ once: true }}
+          className="container mx-auto px-10 pt-28 lg:px-16 h-full"
+        >
           <h2 className="text-white font-bold text-3xl">Contato</h2>
           <div className="flex flex-col xl:flex-row">
             <div className="flex flex-col grow gap-4 [&_img]:w-11 [&_img]:xl:w-11 text-white font-bold text-2xl py-8 xl:text-3xl xl:py-20">
@@ -30,8 +37,8 @@ const Contact = () => {
               </div>
             </div>
           </div>
-        </div>
-      </div>
+        </motion.div>
+      </section>
     )
   }
 }

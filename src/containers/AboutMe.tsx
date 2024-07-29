@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import profile from '../assets/images/profile.png'
 import setaParaBaixo from '../assets/icons/seta-para-baixo.svg'
 
@@ -9,8 +10,14 @@ const AboutMe = () => {
   if (data) {
     console.log(data)
     return (
-      <div className="bg-main-color" id="aboutMe">
-        <div className="container mx-auto px-10 pt-28 lg:px-16 h-full">
+      <section className="bg-main-color overflow-hidden" id="aboutMe">
+        <motion.div
+          initial={{ opacity: 0, transform: 'translatex(-100px)' }}
+          whileInView={{ opacity: 1, transform: 'translatex(0)' }}
+          transition={{ delay: 0.5 }}
+          viewport={{ once: true }}
+          className="container mx-auto px-10 pt-28 lg:px-16 h-full"
+        >
           <h2 className="text-3xl font-bold text-white">Sobre mim</h2>
           <div className="flex flex-col items-center pt-8 xl:grid xl:grid-cols-2/5 xl:content-center xl:pt-20">
             <img src={profile} alt="" className="md:w-1/2 xl:pe-10 xl:w-fit" />
@@ -44,8 +51,8 @@ const AboutMe = () => {
               </a>
             </div>
           </div>
-        </div>
-      </div>
+        </motion.div>
+      </section>
     )
   }
 }

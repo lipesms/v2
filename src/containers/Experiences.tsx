@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import { useState } from 'react'
 import { useGetExperiencesDataQuery } from '../services/api'
 import ExperienceComponent from '../components/ExperienceComponent'
@@ -9,8 +10,14 @@ const Experiences = () => {
 
   if (data) {
     return (
-      <div className="bg-main-color" id="experiences">
-        <div className="container mx-auto px-10 pt-28 lg:px-16 h-full ">
+      <section className="bg-main-color overflow-hidden" id="experiences">
+        <motion.div
+          initial={{ opacity: 0, transform: 'translatex(-100px)' }}
+          whileInView={{ opacity: 1, transform: 'translatex(0)' }}
+          transition={{ delay: 0.5 }}
+          viewport={{ once: true }}
+          className="container mx-auto px-10 pt-28 lg:px-16 h-full "
+        >
           <h2 className="text-white font-bold text-3xl">Experiências</h2>
           <div className="[&_button]:text-2xl [&_button]:xl:text-3xl [&_button]:font-bold [&_button]:me-4 pt-8 xl:pt-20">
             <div className="flex w-fit m-auto my-8 xl:mb-24 [&_button]:transition-all [&_button]:duration-200 ">
@@ -55,8 +62,8 @@ const Experiences = () => {
                   })}
             </div>
           </div>
-        </div>
-      </div>
+        </motion.div>
+      </section>
     )
   }
 }
