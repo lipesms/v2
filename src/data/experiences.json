@@ -1,27 +1,27 @@
 {
   "academics": [
     {
-      "name": "Análise e desenvolvimento de sistemas",
+      "name": "Ciências da computação",
       "local": "São Paulo - SP",
-      "company": "UNIP",
+      "company": "FAM",
       "date": {
-        "start": "02/2018",
-        "end": "02/2018"
-      }
-    },
-    {
-      "name": "Javascript funcional e reativo",
-      "local": "São Paulo - SP",
-      "company": "Udemy",
-      "date": {
-        "start": "02/2018",
-        "end": "02/2018"
+        "start": "08/2024",
+        "end": "Atual"
       }
     },
     {
       "name": "Desenvolvedor FullStack Python",
       "local": "São Paulo - SP",
       "company": "EBAC",
+      "date": {
+        "start": "08/2023",
+        "end": "Atual"
+      }
+    },
+    {
+      "name": "Análise e desenvolvimento de sistemas",
+      "local": "São Paulo - SP",
+      "company": "UNIP",
       "date": {
         "start": "02/2018",
         "end": "02/2018"
@@ -34,12 +34,21 @@
       "local": "São Paulo - SP",
       "company": "Atento",
       "date": {
-        "start": "10/2021",
+        "start": "10/2022",
         "end": "12/2023"
       }
     },
     {
-      "name": "Operador de telemarketing receptivo",
+      "name": "Especialista relacionamento a cliente II",
+      "local": "São Paulo - SP",
+      "company": "Atento",
+      "date": {
+        "start": "10/2021",
+        "end": "10/2022"
+      }
+    },
+    {
+      "name": "Atendente SAC I",
       "local": "São Paulo - SP",
       "company": "Multilaser",
       "date": {
