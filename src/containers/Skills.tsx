@@ -9,7 +9,7 @@ const Skills = () => {
   const { data } = useGetSkillsDataQuery()
   const dispatch = useDispatch()
   const myRef = useRef<HTMLDivElement | null>(null)
-  const isInView = useInView(myRef, { once: false, amount: 0.5 })
+  const isInView = useInView(myRef, { once: false, amount: 0.3 })
 
   useEffect(() => {
     if (isInView) {
