@@ -24,7 +24,7 @@ const Projects = () => {
         <motion.section
           initial={{ opacity: 0, transform: 'translatex(200px)' }}
           whileInView={{ opacity: 1, transform: 'translatex(0)' }}
-          viewport={{ once: true, amount: 0.07 }}
+          viewport={{ once: true, amount: 0.1 }}
           className="container mx-auto px-10 pt-28 lg:px-16 h-full"
         >
           <h2 className="text-white font-bold text-2xl md:text-3xl">
