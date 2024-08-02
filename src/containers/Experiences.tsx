@@ -1,21 +1,36 @@
-import { motion } from 'framer-motion'
-import { useState } from 'react'
+import { motion, useInView } from 'framer-motion'
+import { useEffect, useRef, useState } from 'react'
 import { useGetExperiencesDataQuery } from '../services/api'
 import ExperienceComponent from '../components/ExperienceComponent'
+import { useDispatch } from 'react-redux'
+import { changeSection } from '../store/reducers/navbar'
 
 const Experiences = () => {
   const [infos, setInfos] = useState('academics')
 
   const { data } = useGetExperiencesDataQuery()
 
+  const dispatch = useDispatch()
+  const myRef = useRef<HTMLDivElement | null>(null)
+  const isInView = useInView(myRef, { once: false, amount: 0.5 })
+
+  useEffect(() => {
+    if (isInView) {
+      dispatch(changeSection('experiences'))
+    }
+  }, [dispatch, isInView])
+
   if (data) {
     return (
-      <section className="bg-main-color overflow-hidden" id="experiencias">
-        <motion.div
+      <div
+        ref={myRef}
+        className="bg-main-color overflow-hidden"
+        id="experiencias"
+      >
+        <motion.section
           initial={{ opacity: 0, transform: 'translatex(-100px)' }}
           whileInView={{ opacity: 1, transform: 'translatex(0)' }}
-          transition={{ delay: 0.5 }}
-          viewport={{ once: true }}
+          viewport={{ once: true, amount: 0.5 }}
           className="container mx-auto px-10 pt-28 lg:px-16 h-full "
         >
           <h2 className="text-white font-bold text-3xl">Experiências</h2>
@@ -62,8 +77,8 @@ const Experiences = () => {
                   })}
             </div>
           </div>
-        </motion.div>
-      </section>
+        </motion.section>
+      </div>
     )
   }
 }

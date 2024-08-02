@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { HashLink } from 'react-router-hash-link'
 import { useDispatch, useSelector } from 'react-redux'
 
@@ -14,9 +14,12 @@ const NavBar = ({ className }: Props) => {
 
   const { sections } = useSelector((state: RootReducer) => state.navBar)
   const dispatch = useDispatch()
+  useEffect(() => {
+    console.log(sections)
+  }, [sections])
 
   return (
-    <div
+    <nav
       className={`fixed z-20 w-screen select-none ${className ? 'bg-navBar' : 'bg-background'} transition-all duration-500`}
     >
       <div className="min-h-20 flex justify-end sm:justify-start px-10 mx-auto">
@@ -75,7 +78,7 @@ const NavBar = ({ className }: Props) => {
           </li>
         </ul>
       </div>
-    </div>
+    </nav>
   )
 }
 

@@ -4,16 +4,31 @@ import welcomeCodeImage from '../assets/images/welcomeCode.png'
 import { useGetApresentationDataQuery } from '../services/api'
 import { useDispatch } from 'react-redux'
 import { toogleOpenEmailMenu } from '../store/reducers/email'
+import { useEffect, useRef } from 'react'
+import { useInView } from 'framer-motion'
+import { changeSection } from '../store/reducers/navbar'
 
 const Hero = () => {
   const dispatch = useDispatch()
   const { data } = useGetApresentationDataQuery()
 
+  const myRef = useRef<HTMLDivElement | null>(null)
+  const isInView = useInView(myRef, { once: false, amount: 0.5 })
+
+  useEffect(() => {
+    if (isInView) {
+      dispatch(changeSection('home'))
+    }
+  }, [dispatch, isInView])
+
   if (data) {
     return (
-      <section className=" min-h-screen relative xl:h-screen lg:bg-transparent bg-hero-pattern">
+      <div
+        ref={myRef}
+        className=" min-h-screen relative xl:h-screen lg:bg-transparent bg-hero-pattern"
+      >
         <span className="-z-10 h-full w-full absolute top-0 left-0 bg-mobile-hero-image lg:bg-desktop-hero-image block bg-no-repeat bg-cover"></span>
-        <div className="container mx-auto px-10 xl:px-16 flex flex-col gap-8 pt-32 justify-between w-full h-full xl:flex-row">
+        <section className="container mx-auto px-10 xl:px-16 flex flex-col gap-8 pt-32 justify-between w-full h-full xl:flex-row">
           <div
             className={`pt-4 order-last flex justify-center gap-6 [&_img]:max-w-10 [&_img]:xl:max-w-16 xl:flex-col xl:order-first xl:pt-0`}
           >
@@ -34,7 +49,7 @@ const Hero = () => {
               {data.text}
             </p>
             <button
-              className="px-4 py-4 text-xl bg-buttonLinear rounded-full cursor-pointer max-w-52 hover:shadow-[5px_5px_14px_0_#686868ad] hover:scale-110 transition-all duration-200"
+              className="px-4 py-4 text-xl bg-button-linear rounded-full cursor-pointer max-w-52 hover:shadow-[5px_5px_14px_0_#686868ad] hover:scale-110 transition-all duration-200"
               onClick={() => dispatch(toogleOpenEmailMenu())}
             >
               Entre em contato
@@ -47,8 +62,8 @@ const Hero = () => {
               className="relative rounded-xl max-w-xs md:max-w-md lg:max-w-lg xl:max-w-xl shadow-[15px_10px_0px_0px_#FF79B4] md:shadow-[25px_20px_0px_0px_#FF79B4]  "
             />
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     )
   }
 }

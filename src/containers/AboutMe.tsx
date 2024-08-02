@@ -1,21 +1,31 @@
-import { motion } from 'framer-motion'
+import { motion, useInView } from 'framer-motion'
 import profile from '../assets/images/profile.png'
 import setaParaBaixo from '../assets/icons/seta-para-baixo.svg'
 
 import { useGetAboutMeDataQuery } from '../services/api'
+import { useDispatch } from 'react-redux'
+import { useEffect, useRef } from 'react'
+import { changeSection } from '../store/reducers/navbar'
 
 const AboutMe = () => {
   const { data } = useGetAboutMeDataQuery()
+  const dispatch = useDispatch()
+  const myRef = useRef<HTMLDivElement | null>(null)
+  const isInView = useInView(myRef, { once: false, amount: 0.5 })
+
+  useEffect(() => {
+    if (isInView) {
+      dispatch(changeSection('aboutMe'))
+    }
+  }, [dispatch, isInView])
 
   if (data) {
-    console.log(data)
     return (
-      <section className="bg-main-color overflow-hidden" id="sobre">
-        <motion.div
+      <div ref={myRef} className="bg-main-color overflow-hidden" id="sobre">
+        <motion.section
           initial={{ opacity: 0, transform: 'translatex(-100px)' }}
           whileInView={{ opacity: 1, transform: 'translatex(0)' }}
-          transition={{ delay: 0.5 }}
-          viewport={{ once: true }}
+          viewport={{ once: true, amount: 0.5 }}
           className="container mx-auto px-10 pt-28 lg:px-16 h-full"
         >
           <h2 className="text-3xl font-bold text-white">Sobre mim</h2>
@@ -51,8 +61,8 @@ const AboutMe = () => {
               </a>
             </div>
           </div>
-        </motion.div>
-      </section>
+        </motion.section>
+      </div>
     )
   }
 }

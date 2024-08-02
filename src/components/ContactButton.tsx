@@ -8,7 +8,9 @@ const ContactButton = ({ name, logo, url }: Contact) => {
     return (
       <a
         href={url}
+        target="_blank"
         className="flex items-center gap-4 p-4 bg-gray-500 rounded-2xl hover:bg-[#ff79b4] transition-all duration-200"
+        rel="noreferrer"
       >
         <img src={logo} alt={`${name} logo`} />
         <p>{name}</p>

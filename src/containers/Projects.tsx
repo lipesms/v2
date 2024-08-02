@@ -1,18 +1,30 @@
-import { motion } from 'framer-motion'
+import { motion, useInView } from 'framer-motion'
 import setaPraCima from '../assets/icons/seta-ta-cima.svg'
 import { useGetProjectsDataQuery } from '../services/api'
+import { changeSection } from '../store/reducers/navbar'
+import { useEffect, useRef } from 'react'
+import { useDispatch } from 'react-redux'
 
 const Projects = () => {
   const { data } = useGetProjectsDataQuery()
 
+  const dispatch = useDispatch()
+  const myRef = useRef<HTMLDivElement | null>(null)
+  const isInView = useInView(myRef, { once: false, amount: 0.2 })
+
+  useEffect(() => {
+    if (isInView) {
+      dispatch(changeSection('projects'))
+    }
+  }, [dispatch, isInView])
+
   if (data) {
     return (
-      <section className="bg-main-color overflow-hidden" id="projetos">
-        <motion.div
+      <div ref={myRef} className="bg-main-color overflow-hidden" id="projetos">
+        <motion.section
           initial={{ opacity: 0, transform: 'translatex(200px)' }}
           whileInView={{ opacity: 1, transform: 'translatex(0)' }}
-          transition={{ delay: 0.5 }}
-          viewport={{ once: true }}
+          viewport={{ once: true, amount: 0.2 }}
           className="container mx-auto px-10 pt-28 lg:px-16 h-full"
         >
           <h2 className="text-white font-bold text-2xl md:text-3xl">
@@ -63,8 +75,8 @@ const Projects = () => {
               )
             })}
           </div>
-        </motion.div>
-      </section>
+        </motion.section>
+      </div>
     )
   }
 }

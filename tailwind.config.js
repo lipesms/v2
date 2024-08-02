@@ -24,7 +24,8 @@ export default {
           'url("https://lipesms.github.io/v2//src/assets/images/background_mobile.png")',
         'hero-pattern':
           'linear-gradient(to top, #101728, transparent, transparent, transparent, transparent);',
-        buttonLinear: 'linear-gradient(to right, #FF79B5, #5C80FF);'
+        'email-pattern': 'linear-gradient(225deg, #ff79c3, #5c80ff)',
+        'button-linear': 'linear-gradient(to right, #FF79B5, #5C80FF);'
       },
       gridTemplateColumns: {
         31: '1fr 1fr 1fr',
@@ -42,6 +43,9 @@ export default {
       },
       width: {
         332: '332px'
+      },
+      minWidth: {
+        100: '30rem'
       },
       spacing: {
         '37%': '37%'

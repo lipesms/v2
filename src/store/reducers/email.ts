@@ -1,10 +1,10 @@
 import { createSlice } from '@reduxjs/toolkit'
 
-export type NavBarType = {
+type EmailType = {
   isOpen: boolean
 }
 
-const initialState: NavBarType = {
+const initialState: EmailType = {
   isOpen: false
 }
 

@@ -1,17 +1,33 @@
-import { motion } from 'framer-motion'
+import { motion, useInView } from 'framer-motion'
 import SkillCard from '../components/SkillCard'
 import { useGetSkillsDataQuery } from '../services/api'
+import { useDispatch } from 'react-redux'
+import { useEffect, useRef } from 'react'
+import { changeSection } from '../store/reducers/navbar'
 
 const Skills = () => {
   const { data } = useGetSkillsDataQuery()
+  const dispatch = useDispatch()
+  const myRef = useRef<HTMLDivElement | null>(null)
+  const isInView = useInView(myRef, { once: false, amount: 0.5 })
+
+  useEffect(() => {
+    if (isInView) {
+      dispatch(changeSection('skills'))
+    }
+  }, [dispatch, isInView])
+
   if (data) {
     return (
-      <section className="bg-main-color overflow-hidden" id="tecnologias">
-        <motion.div
+      <div
+        ref={myRef}
+        className="bg-main-color overflow-hidden"
+        id="tecnologias"
+      >
+        <motion.section
           initial={{ opacity: 0, transform: 'translatex(200px)' }}
           whileInView={{ opacity: 1, transform: 'translatex(0)' }}
-          transition={{ delay: 0.3 }}
-          viewport={{ once: true }}
+          viewport={{ once: true, amount: 0.5 }}
           className="container mx-auto px-10 pt-28 lg:px-16 h-full"
         >
           <h2 className="text-white font-bold text-3xl">Habilidades</h2>
@@ -20,8 +36,8 @@ const Skills = () => {
             <SkillCard technology="Back-end" skills={data.backend} />
             <SkillCard technology="Design" skills={data.design} />
           </div>
-        </motion.div>
-      </section>
+        </motion.section>
+      </div>
     )
   }
 }

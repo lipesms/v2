@@ -21,7 +21,7 @@ export type HeroContacs = {
 
 export type Apresentation = {
   headline: string
-  text: string
+  text: string[]
   contacts: HeroContacs[]
 }
 

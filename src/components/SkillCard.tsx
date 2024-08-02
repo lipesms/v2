@@ -29,22 +29,10 @@ const SkillCard = ({ technology, skills }: CardProps) => {
       </div>
       <ul className="flex flex-wrap gap-4 mt-8 text-white text-xl md:text-2xl font-bold lg:justify-center [&_div]:flex [&_div]:justify-between [&_li]:pt-4">
         {skills.map((e) => {
-          console.log(typeof e.percent)
           return (
             <li className="p-4 w-fit rounded-xl bg-gray-20%" key={e.name}>
               {e.name}
             </li>
-            // <li key={e.name}>
-            //   <div>
-            //     <h4>{e.name}</h4>
-            //     <span>{e.percent}%</span>
-            //   </div>
-            //   <div className="h-1.5 w-full bg-gray-400 rounded-full">
-            //     <span
-            //       className={`block h-full bg-section-active rounded-full w-[${e.percent}%]`}
-            //     ></span>
-            //   </div>
-            // </li>
           )
         })}
       </ul>
