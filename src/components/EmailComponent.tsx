@@ -48,37 +48,43 @@ const EmailComponent = () => {
       ></span>
       <form
         method="post"
-        className={`${sented ? 'hidden' : 'flex'} z-40  flex-col gap-6 p-8 bg-background rounded-2xl text-lg md:min-w-96 text-white`}
+        className={`${sented ? 'hidden' : 'flex'} z-40  flex-col gap-6 p-8 bg-email-pattern rounded-2xl text-lg md:min-w-100 text-white`}
         onSubmit={handleSubmit}
       >
         <h3 className="text-center font-bold text-3xl">Contato</h3>
-        <input
-          name="name"
-          type="text"
-          placeholder="Nome"
-          className="p-2 outline-0 rounded-lg border bg-transparent "
-          onChange={(e) => setName(e.target.value)}
-          value={name}
-          required
-        />
-        <input
-          name="email"
-          type="email"
-          placeholder="Seu e-mail"
-          className="p-2 outline-0 rounded-lg border bg-transparent"
-          onChange={(e) => setEmail(e.target.value)}
-          value={email}
-          required
-        />
-        <textarea
-          name="message"
-          rows={5}
-          className="p-2 outline-0 rounded-lg border bg-transparent"
-          placeholder="Escreva sua mensagem"
-          onChange={(e) => setMessage(e.target.value)}
-          value={message}
-          required
-        ></textarea>
+        <div className="flex items-end">
+          <label className="font-bold border-b pe-2">Nome:</label>
+          <input
+            name="name"
+            type="text"
+            className="grow outline-0 border-b bg-transparent"
+            onChange={(e) => setName(e.target.value)}
+            value={name}
+            required
+          />
+        </div>
+        <div className="flex items-end">
+          <label className="font-bold border-b pe-2">E-mail:</label>
+          <input
+            name="email"
+            type="email"
+            className="grow outline-0 border-b bg-transparent"
+            onChange={(e) => setEmail(e.target.value)}
+            value={email}
+            required
+          />
+        </div>
+        <div className="flex flex-col gap-2">
+          <label className="font-bold">Mensagem:</label>
+          <textarea
+            name="message"
+            rows={5}
+            className="p-2 outline-0 rounded-lg border bg-transparent"
+            onChange={(e) => setMessage(e.target.value)}
+            value={message}
+            required
+          ></textarea>
+        </div>
         <div className="self-end">
           <button
             className="p-2 text-lg me-4 bg-red rounded-lg te"
@@ -98,15 +104,17 @@ const EmailComponent = () => {
         </div>
       </form>
       <div
-        className={`${sented ? 'flex' : 'hidden'} z-40  flex-col gap-6 p-20 bg-background rounded-2xl text-lg md:min-w-96 text-white`}
+        className={`${sented ? 'flex' : 'hidden'} z-40 relative flex-col gap-6 mx-10 p-10 md:p-20 bg-email-pattern rounded-2xl text-lg md:min-w-100 text-white`}
       >
-        <p className="text-3xl font-bold">Obrigado pela mensagem!</p>
+        <p className="text-3xl font-bold text-center">
+          Obrigado pela mensagem!
+        </p>
         <p className="text-center">Em breve entrarei em contato. 😉</p>
         <button
-          className="bg-buttonLinear p-2 text-lg rounded-lg"
+          className="absolute top-[16px] right-[24px] text-2xl"
           onClick={() => dispatch(toogleOpenEmailMenu())}
         >
-          Fechar
+          X
         </button>
       </div>
     </div>
