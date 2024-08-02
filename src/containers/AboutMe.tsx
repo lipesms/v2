@@ -11,7 +11,7 @@ const AboutMe = () => {
   const { data } = useGetAboutMeDataQuery()
   const dispatch = useDispatch()
   const myRef = useRef<HTMLDivElement | null>(null)
-  const isInView = useInView(myRef, { once: false, amount: 0.3 })
+  const isInView = useInView(myRef, { once: false, amount: 0.2 })
 
   useEffect(() => {
     if (isInView) {
@@ -25,7 +25,7 @@ const AboutMe = () => {
         <motion.section
           initial={{ opacity: 0, transform: 'translatex(-100px)' }}
           whileInView={{ opacity: 1, transform: 'translatex(0)' }}
-          viewport={{ once: true, amount: 0.5 }}
+          viewport={{ once: true, amount: 0.3 }}
           className="container mx-auto px-10 pt-28 lg:px-16 h-full"
         >
           <h2 className="text-3xl font-bold text-white">Sobre mim</h2>
