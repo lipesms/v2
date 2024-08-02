@@ -45,9 +45,12 @@ const Hero = () => {
             <h1 className="text-3xl text-center xl:text-5xl xl:text-start ">
               {data.headline}
             </h1>
-            <p className="text-xl text-center xl:w-4/5 xl:text-start">
-              {data.text}
-            </p>
+            {data.text.map((t, i) => (
+              <p className="text-xl text-center xl:w-4/5 xl:text-start" key={i}>
+                {t}
+              </p>
+            ))}
+
             <button
               className="px-4 py-4 text-xl bg-button-linear rounded-full cursor-pointer max-w-52 hover:shadow-[5px_5px_14px_0_#686868ad] hover:scale-110 transition-all duration-200"
               onClick={() => dispatch(toogleOpenEmailMenu())}
