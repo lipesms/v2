@@ -3,7 +3,7 @@
     "name": "Trends",
     "description": "O Trends é um site para quem deseja estar atualizado sobre as novas séries do momento, filmes e famosos, reunindo uma coletanea de informações de primeira para saber mais sobre seus conteudos favoritos.",
     "image": "https://lipesms.github.io/v2//src/assets/images/projects/trends.png",
-    "url": "https://trends-hazel.vercel.app/",
+    "url": "https://hollywood-trends.vercel.app",
     "technologies": ["https://lipesms.github.io/v2//src/assets/icons/technologies/react.png", "https://lipesms.github.io/v2//src/assets/icons/technologies/typescript.png", "https://lipesms.github.io/v2//src/assets/icons/technologies/tailwind.png"]
   },
   {
