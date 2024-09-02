@@ -26,7 +26,7 @@ export type Apresentation = {
 }
 
 export type AboutMe = {
-  text: string
+  text: string[]
   curriculum: string
   overlay: {
     years: number

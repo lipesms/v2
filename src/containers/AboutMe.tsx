@@ -46,11 +46,13 @@ const AboutMe = () => {
                   <p>Projetos</p>
                 </li>
               </ul>
-              <p className="text-md w-full md:text-lg text-center pt-8 pb-6 xl:text-start">
-                {data.text}
-              </p>
+              <div className="text-md w-full md:text-lg text-center pt-8 pb-6 xl:text-start">
+                {data.text.map(p => (
+                  <p className='pb-4'>{p}</p>
+                ))}
+              </div>
               <a
-                className="flex self-center bg-section-active text-black py-4 px-4 rounded-full w-fit cursor-pointer hover:scale-110 transition-all duration-200"
+                className="flex self-center bg-section-active text-black p-4 rounded-full w-fit cursor-pointer hover:scale-105 transition-all duration-200"
                 href={`${data.curriculum}`}
                 download
                 target="_blank"
